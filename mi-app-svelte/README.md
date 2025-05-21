@@ -1,47 +1,39 @@
-# Svelte + Vite
+# Mi Primer Proyecto Full-stack con Svelte y Express
 
-This template should help get you started developing with Svelte in Vite.
+Este es un proyecto sencillo de una aplicación web full-stack que permite enviar un mensaje desde un frontend creado con Svelte a un backend desarrollado con Express (Node.js), el cual responde con una confirmación.
 
-## Recommended IDE Setup
+## Cómo ejecutarlo
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+Sigue estos pasos para correr el proyecto localmente:
 
-## Need an official Svelte framework?
+1.  **Clona el repositorio:**
+    ```bash
+    git clone [https://www.youtube.com/watch?v=KrJwqsuhZ8U](https://www.youtube.com/watch?v=KrJwqsuhZ8U)
+    ```
+    *(Reemplaza `https://www.youtube.com/watch?v=KrJwqsuhZ8U` con la dirección real de tu repositorio en GitHub)*
 
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
+2.  **Navega al directorio del proyecto:**
+    ```bash
+    cd mi-app-svelte
+    ```
 
-## Technical considerations
+3.  **Ejecuta el frontend (Svelte):**
+    ```bash
+    cd .
+    npm install
+    npm run dev
+    ```
+    *(Esto instalará las dependencias del frontend e iniciará el servidor de desarrollo. Deberías ver la aplicación corriendo en `http://localhost:5173` o un puerto similar)*
 
-**Why use this over SvelteKit?**
+4.  **Abre otra terminal y navega al directorio del backend:**
+    ```bash
+    cd backend
+    npm install
+    node server.js
+    ```
+    *(Esto instalará las dependencias del backend e iniciará el servidor. Deberías ver el mensaje "Servidor backend escuchando en http://localhost:3000")*
 
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
+Una vez que ambos servidores estén en ejecución, podrás interactuar con la aplicación en tu navegador.
 
-This template contains as little as possible to get started with Vite + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
 
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
-
-**Why `global.d.ts` instead of `compilerOptions.types` inside `jsconfig.json` or `tsconfig.json`?**
-
-Setting `compilerOptions.types` shuts out all other types not explicitly listed in the configuration. Using triple-slash references keeps the default TypeScript setting of accepting type information from the entire workspace, while also adding `svelte` and `vite/client` type information.
-
-**Why include `.vscode/extensions.json`?**
-
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
-
-**Why enable `checkJs` in the JS template?**
-
-It is likely that most cases of changing variable types in runtime are likely to be accidental, rather than deliberate. This provides advanced typechecking out of the box. Should you like to take advantage of the dynamically-typed nature of JavaScript, it is trivial to change the configuration.
-
-**Why is HMR not preserving my local component state?**
-
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/sveltejs/svelte-hmr/tree/master/packages/svelte-hmr#preservation-of-local-state).
-
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
-
-```js
-// store.js
-// An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
-```
+![Captura del Proyecto](/Imagenes/6.jpg)
