@@ -36,4 +36,4 @@ Sigue estos pasos para correr el proyecto localmente:
 Una vez que ambos servidores estén en ejecución, podrás interactuar con la aplicación en tu navegador.
 
 
-![Captura del Proyecto](/Imagenes/6.jpg)
+![Captura del Proyecto](Imagenes/6.jpg)
